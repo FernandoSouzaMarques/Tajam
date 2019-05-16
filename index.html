@@ -9,44 +9,46 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<header class="s-header t-container">
-		<figure class="s-header__logo">
-			<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
-		</figure>
-		<nav class="c-menu">
-			<ul class="c-menu__list">
-				<li class="c-menu__list-item"><a href="#" class="c-menu__item c-menu__item--is-active">Home</a></li>
-				<li class="c-menu__list-item"><a href="#" class="c-menu__item">About</a></li>
-				<li class="c-menu__list-item"><a href="#" class="c-menu__item">Expertise</a></li>
-				<li class="c-menu__list-item"><a href="#" class="c-menu__item">Teams</a></li>
-				<li class="c-menu__list-item"><a href="#" class="c-menu__item">Works</a></li>
-				<li class="c-menu__list-item"><a href="#" class="c-menu__item">People say</a></li>
-				<li class="c-menu__list-item"><a href="#" class="c-menu__item">Contact</a></li>
+	<header class="s-header">
+		<div class="t-container">
+			<figure class="s-header__logo">
+				<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
+			</figure>
+			<nav class="c-menu">
+				<ul class="c-menu__list">
+					<li class="c-menu__list-item"><a href="#" class="c-menu__item c-menu__item--is-active">Home</a></li>
+					<li class="c-menu__list-item"><a href="#" class="c-menu__item">About</a></li>
+					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Expertise</a></li>
+					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Teams</a></li>
+					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Works</a></li>
+					<li class="c-menu__list-item"><a href="#" class="c-menu__item">People say</a></li>
+					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Contact</a></li>
+				</ul>
+			</nav>
+
+			<h1 class="s-header__title">
+				We Are Awesome Creative Agency
+			</h1>
+
+			<p class="s-header__text">
+				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+			</p>
+
+			<button class="o-button o-button--white">
+				Learn More
+			</button>
+
+			<ul class="c-carousel">
+				<li class="c-carousel__dot is-selected">&dot;</li>
+				<li class="c-carousel__dot"> &dot;</li>
+				<li class="c-carousel__dot"> &dot;</li>
+				<li class="c-carousel__dot"> &dot;</li>
 			</ul>
-		</nav>
-
-		<h1 class="s-header__title">
-			We Are Awesome Creative Agency
-		</h1>
-
-		<p class="s-header__text">
-			This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-		</p>
-
-		<button class="o-button o-button--white">
-			Learn More
-		</button>
-
-		<ul class="c-carousel">
-			<li class="c-carousel__dot is-selected">&dot;</li>
-			<li class="c-carousel__dot"> &dot;</li>
-			<li class="c-carousel__dot"> &dot;</li>
-			<li class="c-carousel__dot"> &dot;</li>
-		</ul>
+		</div>
 	</header>
 
-	<main class="s-main t-container">
-		<section class="s-our-story">
+	<main class="s-main">
+		<section class="s-our-story t-container">
 			<div>
 				<h2 class="s-our-story__title">
 					Our Story
@@ -74,7 +76,7 @@
 			</h3>
 		</section>
 
-		<section class="s-expertise">
+		<section class="s-expertise t-container">
 			<h2 class="s-expertise__title">
 				Expertise
 			</h2>
@@ -140,63 +142,65 @@
 		</section>
 
 		<section class="s-team">
-			<h2 class="s-team__title">
-				MEET OUR AMAZING TEAM
-			</h2>
+			<div class="t-container">
+				<h2 class="s-team__title">
+					MEET OUR AMAZING TEAM
+				</h2>
 
-			<p class="s-team__text">
-				Lorem ipsum dolor sit amet proin gravida nibh vel velit
-			</p>
+				<p class="s-team__text">
+					Lorem ipsum dolor sit amet proin gravida nibh vel velit
+				</p>
 
-			<div class="c-team">
-				<div class="c-team__people">
-					<figure>
-						<img src="assets/images/team/t-people.png" class="c-team__photo">
-						<figcaption class="c-team__information">
-							<h5 class="c-team__name">SEMF UCUK </h5>
-							<small class="c-team__office">CEO & FOUNDER</small>
-						</figcaption>
-					</figure>
+				<div class="c-team">
+					<div class="c-team__people">
+						<figure>
+							<img src="assets/images/team/t-people.png" class="c-team__photo">
+							<figcaption class="c-team__information">
+								<h5 class="c-team__name">SEMF UCUK </h5>
+								<small class="c-team__office">CEO & FOUNDER</small>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="c-team__people">
+						<figure>
+							<img src="assets/images/team/t-people.png" class="c-team__photo">
+							<figcaption class="c-team__information">
+								<h5 class="c-team__name">DIK ADALIN </h5>
+								<small class="c-team__office">ENGINEERING</small>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="c-team__people">
+						<figure>
+							<img src="assets/images/team/t-people.png" class="c-team__photo">
+							<figcaption class="c-team__information">
+								<h5 class="c-team__name">JEN KOL</h5>
+								<small class="c-team__office">DESIGNER</small>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="c-team__people">
+						<figure>
+							<img src="assets/images/team/t-people.png" class="c-team__photo">
+							<figcaption class="c-team__information">
+								<h5 class="c-team__name">PET ROMAK </h5>
+								<small class="c-team__office">MARKETING</small>
+							</figcaption>
+						</figure>
+					</div>
 				</div>
 
-				<div class="c-team__people">
-					<figure>
-						<img src="assets/images/team/t-people.png" class="c-team__photo">
-						<figcaption class="c-team__information">
-							<h5 class="c-team__name">DIK ADALIN </h5>
-							<small class="c-team__office">ENGINEERING</small>
-						</figcaption>
-					</figure>
-				</div>
+				<p>
+					Become part of our dream team, let’s join us ! 
+				</p>
 
-				<div class="c-team__people">
-					<figure>
-						<img src="assets/images/team/t-people.png" class="c-team__photo">
-						<figcaption class="c-team__information">
-							<h5 class="c-team__name">JEN KOL</h5>
-							<small class="c-team__office">DESIGNER</small>
-						</figcaption>
-					</figure>
-				</div>
-
-				<div class="c-team__people">
-					<figure>
-						<img src="assets/images/team/t-people.png" class="c-team__photo">
-						<figcaption class="c-team__information">
-							<h5 class="c-team__name">PET ROMAK </h5>
-							<small class="c-team__office">MARKETING</small>
-						</figcaption>
-					</figure>
-				</div>
+				<button class="o-button o-button--white">
+					We are hiring
+				</button>
 			</div>
-
-			<p>
-				Become part of our dream team, let’s join us ! 
-			</p>
-
-			<button class="o-button o-button--white">
-				We are hiring
-			</button>
 		</section>
 
 		<section class="s-works">
@@ -204,25 +208,27 @@
 		</section>
 
 		<section class="s-people-say">
-			<p class="s-people-say__text">
-				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-			</p>
+			<div class="t-container">
+				<p class="s-people-say__text">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+				</p>
 
-			<h4 class="s-people-say__name">JANE GALADRIEL</h4>
-			<p class="s-people-say__office">CEO TENGKUREP</p>
+				<h4 class="s-people-say__name">JANE GALADRIEL</h4>
+				<p class="s-people-say__office">CEO TENGKUREP</p>
 
-			<button class="prev"></button>
-			<ul class="c-carousel">
-				<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-1.png"></li>
-				<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-2.png"></li>
-				<li class="c-carousel__dot is-selected"><img src="assets/images/people-say/p-people-3.png"></li>
-				<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-4.png"></li>
-				<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-5.png"></li>
-			</ul>
-			<button class="next"></button>
+				<button class="prev"></button>
+				<ul class="c-carousel">
+					<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-1.png"></li>
+					<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-2.png"></li>
+					<li class="c-carousel__dot is-selected"><img src="assets/images/people-say/p-people-3.png"></li>
+					<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-4.png"></li>
+					<li class="c-carousel__dot"><img src="assets/images/people-say/p-people-5.png"></li>
+				</ul>
+				<button class="next"></button>
+			</div>
 		</section>
 
-		<section class="s-contact">
+		<section class="s-contact t-container">
 			<form class="s-contact__form">
 				<h2 class="s-contact__title s-contact__title--form">
 					Give us a good news
@@ -258,53 +264,55 @@
 		</section>
 	</main>
 
-	<footer class="s-footer t-container">
-		<div class="s-footer__informations">
-			<figure class="s-footer__logo">
-				<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
-			</figure>
+	<footer class="s-footer">
+		<div class="t-container">
+			<div class="s-footer__informations">
+				<figure class="s-footer__logo">
+					<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
+				</figure>
 
-			<p class="s-footer__text">
-				lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
-			</p>
+				<p class="s-footer__text">
+					lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+				</p>
+			</div>
+
+			<div class="s-footer__location">
+				<h5 class="s-footer__title">Our Studio</h5>
+
+				<p class="s-footer__address">
+					Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+				</p>
+				<p class="s-footer__phone">
+					<a href="tel:(+62) 21-2224 3333" class="s-footer__tel">(+62) 21-2224 3333</a>
+				</p>
+			</div>
+
+			<div class="s-footer__socials">
+				<form class="s-footer__email">
+					<input type="text" name="newsletter" placeholder="Subscribe our newsletter">
+					<input type="submit" name="airplane-submit">
+				</form>
+
+				<ul class="c-socials">
+					<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-facebook.png" class="c-socials__image" alt="" title=""></a></li>
+					<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-twitter.png" class="c-socials__image" alt="" title=""></a></li>
+					<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-dribbble.png" class="c-socials__image" alt="" title=""></a></li>
+					<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-instagram.png" class="c-socials__image" alt="" title=""></a></li>
+					<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-gplus.png" class="c-socials__image" alt="" title=""></a></li>
+					<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-youtube.png" class="c-socials__image" alt="" title=""></a></li>
+				</ul>
+			</div>
+
+			<nav class="c-footer-nav">
+				<ul class="c-footer-nav__list">
+					<li class="c-footer-nav__item"><a href="#" target="_blank" class="c-footer-nav__ancor">Help</a></li>
+					<li class="c-footer-nav__item"><a href="#" target="_blank" class="c-footer-nav__ancor">Terms & Conditions</a></li>
+					<li class="c-footer-nav__item"><a href="#" target="_blank" class="c-footer-nav__ancor">Privacy</a></li>
+				</ul>
+			</nav>
+
+			 <small>Copyright &copy; 2015 - Tajam Creative</small>
 		</div>
-
-		<div class="s-footer__location">
-			<h5 class="s-footer__title">Our Studio</h5>
-
-			<p class="s-footer__address">
-				Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
-			</p>
-			<p class="s-footer__phone">
-				<a href="tel:(+62) 21-2224 3333" class="s-footer__tel">(+62) 21-2224 3333</a>
-			</p>
-		</div>
-
-		<div class="s-footer__socials">
-			<form class="s-footer__email">
-				<input type="text" name="newsletter" placeholder="Subscribe our newsletter">
-				<input type="submit" name="airplane-submit">
-			</form>
-
-			<ul class="c-socials">
-				<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-facebook.png" class="c-socials__image" alt="" title=""></a></li>
-				<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-twitter.png" class="c-socials__image" alt="" title=""></a></li>
-				<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-dribbble.png" class="c-socials__image" alt="" title=""></a></li>
-				<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-instagram.png" class="c-socials__image" alt="" title=""></a></li>
-				<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-gplus.png" class="c-socials__image" alt="" title=""></a></li>
-				<li class="c-socials__item"><a href="#" class="c-socials__ancor" target="_blank" ><img src="assets/images/footer/f-icon-youtube.png" class="c-socials__image" alt="" title=""></a></li>
-			</ul>
-		</div>
-
-		<nav class="c-footer-nav">
-			<ul class="c-footer-nav__list">
-				<li class="c-footer-nav__item"><a href="#" target="_blank" class="c-footer-nav__ancor">Help</a></li>
-				<li class="c-footer-nav__item"><a href="#" target="_blank" class="c-footer-nav__ancor">Terms & Conditions</a></li>
-				<li class="c-footer-nav__item"><a href="#" target="_blank" class="c-footer-nav__ancor">Privacy</a></li>
-			</ul>
-		</nav>
-
-		 <small>Copyright &copy; 2015 - Tajam Creative</small>
 	</footer>
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

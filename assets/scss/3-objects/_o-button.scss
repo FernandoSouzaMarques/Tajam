@@ -1,0 +1,20 @@
+.o-button {
+	color: $color-blue;
+	font-family: $font-family-second;
+	font-size: 16px;
+	border: solid 1px $color-blue;
+	padding: 14px 15px;
+	background: transparent;
+	cursor: pointer;
+	transition: 0.6s; 
+}
+
+.o-button--white:hover {
+	color: $color-white;
+	border-color: $color-white;
+}
+
+.o-button--purple:hover {
+	color: $color-purple;
+	border-color: $color-purple;
+}
