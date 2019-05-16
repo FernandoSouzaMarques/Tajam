@@ -1,0 +1,25 @@
+.display-on {
+  display: none;
+  max-height: none;
+  font-size: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+@include respond-to(mobile) {
+  .display-off {
+    width: 0;
+    display: none;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+  }
+
+  .display-on {
+    display: block;
+    max-height: none;
+    font-size: auto;
+    height: auto;
+    overflow: visible;
+  }
+}
