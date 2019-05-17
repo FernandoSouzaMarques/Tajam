@@ -1,0 +1,29 @@
+.s-watch {
+	height: 550px;
+	background-image: url('../images/watch/w-bg.png');
+	text-align: center;
+	position: relative;
+}
+
+.s-watch__container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.s-watch__button {
+	border: none;
+	width: 100px;
+	height: 100px;
+	background: transparent;
+	background-image: url('../images/watch/w-play.png');
+	cursor: pointer;
+}
+
+.s-watch__title {
+	font-size: 16px;
+	color: $color-white;
+	font-family: $font-family-main;
+	margin-top: 34px;
+}

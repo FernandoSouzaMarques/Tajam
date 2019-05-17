@@ -1,0 +1,39 @@
+.c-team {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.c-team__people {
+	flex: 1;
+}
+
+.c-team__photo {
+	vertical-align: bottom;
+}
+
+.c-team__information {
+	margin: 0 auto 70px;
+	width: 220px;
+	padding: 22px 0 24px;
+	border: solid 1px $color-purple-light;
+	box-sizing: border-box;
+}
+
+.c-team__name {
+	font-size: 14px;
+	color: $color-white;
+	font-family: $font-family-main;
+}
+
+.c-team__office {
+	font-size: 13px;
+	color: $color-purple-light;
+	font-family: $font-family-main;	
+	font-weight: $font-weight-light;
+}
+
+.s-team__second-text {
+	font-size: 14px;
+	color: $color-white;
+	margin-bottom: 26px;
+}

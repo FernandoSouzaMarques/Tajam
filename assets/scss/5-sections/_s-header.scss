@@ -1,5 +1,5 @@
 .s-header {
-	height: 100vh;
+	height: 670px;
 	background-image: url('../images/header/h-bg.png');
 	text-align: center;
 
@@ -37,5 +37,6 @@
 .s-header__text {
 	color: $color-white;
 	font-size: 14px;
-	margin-bottom: 50px;
+	margin: 0 auto 50px;
+	max-width: 700px;
 }
