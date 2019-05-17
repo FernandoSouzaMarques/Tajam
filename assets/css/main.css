@@ -549,6 +549,24 @@ strong {
   color: #fff;
   margin-bottom: 26px; }
 
+.c-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 88px;
+  margin-bottom: 110px; }
+
+.s-works__image {
+  flex: 1;
+  width: 253px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: #a1a1a1;
+  border: none; }
+
+.s-works__image:nth-child(even) {
+  background-color: #b6b6b6; }
+
 .s-header {
   height: 670px;
   background-image: url("../images/header/h-bg.png");
@@ -689,5 +707,106 @@ strong {
     left: 50%;
     transform: translateX(-50%);
     background-color: #655c80; }
+
+.s-works {
+  padding: 70px 0;
+  text-align: center;
+  position: relative; }
+  .s-works .o-button {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%); }
+
+.s-works__title {
+  font-size: 22px;
+  float: left; }
+
+.s-works__see-all {
+  float: right;
+  color: #413d4b;
+  text-decoration: none;
+  font-size: 14px; }
+  .s-works__see-all::after {
+    clear: both;
+    content: '';
+    background: transparent;
+    width: 4px;
+    height: 4px;
+    border: solid 1px #413d4b;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); }
+
+.s-people-say {
+  height: 500px;
+  background-image: url("../images/people-say/p-bg.png");
+  text-align: center; }
+  .s-people-say .t-container {
+    padding: 70px 0; }
+
+.s-people-say__text {
+  margin: 0 auto 55px;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  padding-top: 70px;
+  position: relative;
+  max-width: 770px; }
+  .s-people-say__text::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 26px;
+    background-image: url("../images/people-say/p-marks.png");
+    background-repeat: no-repeat;
+    background-size: content; }
+
+.s-people-say__name {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif; }
+
+.s-people-say__office {
+  color: #655c80;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  margin: 12px 0 45px; }
+
+.s-people-say__carousel {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.s-people-say__carousel-dot {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 7px;
+  cursor: pointer; }
+
+.next,
+.prev {
+  background: transparent;
+  width: 19px;
+  height: 20px;
+  border: solid 2px #655c80;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer; }
+
+.next {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+.prev {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); }
 
 /*# sourceMappingURL=main.css.map */
