@@ -1,0 +1,35 @@
+.s-team {
+	height: 712px;
+	background-image: url('../images/team/t-bg.png');
+	text-align: center;
+
+	.t-container {
+		padding: 70px 0;
+	}
+}
+
+.s-team__title {
+	color: $color-white;
+	font-size: 22px;
+	margin-bottom: 18px;
+}
+
+.s-team__text {
+	font-size: 14px;
+	color: $color-white;
+	margin-bottom: 60px;
+	position: relative;
+	font-family: $font-family-title;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 50px;
+		height: 2px;
+		top: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $color-purple-light;
+	}
+}

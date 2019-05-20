@@ -1,0 +1,28 @@
+.c-carousel {
+	margin: 127px 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+
+.c-carousel__dot {
+	display: inline-block;
+	background: transparent;
+	border: solid 1px $color-white;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	&:hover{
+		border-color: $color-blue;
+		background-color: $color-blue;
+	}
+}
+
+.is-selected {
+	border-color: $color-blue;
+	background-color: $color-blue;
+}
