@@ -1,0 +1,33 @@
+.c-footer-nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.c-footer-nav__list {
+	list-style: none;
+	text-align: left;
+	padding: 0;
+}
+
+.c-footer-nav__item {
+	display: inline-block;
+	margin-right: 34px;
+}
+
+.c-footer-nav__ancor {
+	color: $color-white;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:hover {
+		color: $color-blue;
+	}
+}
+
+.c-footer-nav__copy {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 14px;
+}

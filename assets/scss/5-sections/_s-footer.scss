@@ -16,6 +16,11 @@
 	width: 290px;
 	display: inline-block;
 	vertical-align: top;
+	margin-right: 35px;
+}
+
+.s-footer__socials {
+	margin-right: 0;
 }
 
 .s-footer__text {
@@ -67,6 +72,7 @@ background-size: content;
 	max-width: 290px;
 	height: 45px;
 	position: relative;
+	margin-bottom: 27px;
 }
 
 .s-footer__email-input {
