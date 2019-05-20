@@ -1,0 +1,109 @@
+.s-footer {
+	height: 400px;
+	background-image: url('../images/footer/f-bg.png');
+	color: $color-white;
+	font-weight: $font-weight-light;
+
+	.t-container {
+		padding: 70px 0;
+	}
+}
+
+.s-footer__informations,
+.s-footer__location,
+.s-footer__socials {
+	max-width: 290px;
+	width: 290px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.s-footer__text {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.s-footer__title {
+	color: $color-white;
+	font-size: 15px;
+	font-family: $font-family-main;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.s-footer__address,
+.s-footer__phone {
+	padding-left: 30px;
+	margin-bottom: 25px;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+.s-footer__address {
+	background-image: url('../images/footer/f-icon-location.png');
+	background-repeat: no-repeat;
+	background-size: content;
+}
+
+.s-footer__phone {
+background-image: url('../images/footer/f-icon-phone.png');
+background-repeat: no-repeat;
+background-size: content;
+}
+
+.s-footer__tel {
+	color: $color-white;
+	text-decoration: none;
+}
+
+.s-footer__email {
+	max-width: 290px;
+	height: 45px;
+	position: relative;
+}
+
+.s-footer__email-input {
+	width: 211px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	background: transparent;
+	border: solid 1px $color-purple-light;
+	padding: 16px 20px;
+	color:$color-white;
+
+	&::placeholder {
+  	color: $color-purple-light;
+  	opacity: 1; /* Firefox */
+  	font-size: 14px;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ 		color: $color-purple-light;
+ 		font-size: 14px;
+	}
+
+	&::-ms-input-placeholder { /* Microsoft Edge */
+ 		color: $color-purple-light;
+ 		font-size: 14px;
+	}
+}
+
+.s-footer__email-submit {
+	width: 70px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	border: none;
+	background: transparent;
+	background-image: url('../images/footer/f-btn-airplane.png');
+	background-size: content;
+	background-repeat: no-repeat;
+}

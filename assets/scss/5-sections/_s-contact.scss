@@ -1,0 +1,48 @@
+.s-contact {
+	padding: 70px 0;
+}
+
+.s-contact__form,
+.s-contact__clients {
+	display: inline-block;
+	max-width: 460px;
+	vertical-align: top;
+}
+
+.s-contact__clients {
+	margin-left: 100px;
+}
+
+.s-contact__title {
+	text-align: left;
+	font-size: 22px;
+	margin-bottom: 35px;
+}
+
+.s-contact__input,
+.s-contact__textarea {
+	width: 100%;
+	height: 45px;
+	margin-bottom: 23px;
+	border: solid 1px $color-gray-light;
+	padding: 17px 20px 16px;
+	box-sizing: border-box;
+}
+
+.s-contact__textarea {
+	height: 200px;
+	resize: none;
+}
+
+.s-contact__clients-group {
+	max-width: 385px;
+	font-size: 0;
+
+	.s-contact__clients-image {
+		display: inline-block;
+		width: 50%;
+		position: relative;
+		margin-bottom: 45px;
+		text-align: center;
+	}
+}
