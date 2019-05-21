@@ -40,3 +40,22 @@
 	margin: 0 auto 50px;
 	max-width: 700px;
 }
+
+@include respond-to(mobile) {
+	.s-header__logo {
+		float: none;
+	}
+
+	.s-header__title {
+		margin-top: 120px;
+		margin-bottom: 50px;
+
+		&::after {
+			top: 100px;
+		}
+	}
+
+	.s-header__text {
+		padding: 0 20px;
+	}
+}

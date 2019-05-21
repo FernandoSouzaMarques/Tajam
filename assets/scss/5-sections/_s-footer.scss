@@ -113,3 +113,31 @@ background-size: content;
 	background-size: content;
 	background-repeat: no-repeat;
 }
+
+@include respond-to(tablet) {
+	.s-footer {
+		height: auto;
+
+		.t-container {
+	    padding: 30px 10px;
+	    text-align: center;
+		}
+	}
+
+	.s-footer__logo {
+		text-align: center;
+	}
+
+	.s-footer__informations,
+	.s-footer__location,
+	.s-footer__socials {
+		max-width: 665px;
+		width: 100%;
+		text-align: left
+	}
+
+	.s-footer__title {
+		margin: 20px 0 10px;
+	}
+
+}

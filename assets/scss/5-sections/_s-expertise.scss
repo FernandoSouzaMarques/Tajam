@@ -25,3 +25,9 @@
 		background-color: $color-gray-light;
 	}
 }
+
+@include respond-to(mobile) {
+	.s-expertise {
+		padding: 30px 0;
+	}
+}
