@@ -30,3 +30,42 @@
 	margin-bottom: 30px;
 	font-size: 14px;
 }
+
+@include respond-to(mobile) {
+	.s-our-story {
+		padding: 30 0;
+	}
+
+	.s-our-story::before {
+		width: 40%;
+		display: block;
+		margin: 0 auto;
+		height: 130px;
+	}
+
+	.s-our-story__container {
+		width: 100%;
+		text-align: center;
+		padding: 0 10px;
+	}
+}
+
+@include respond-to(tablet) {
+	.s-our-story {
+		padding: 30 0;
+	}
+
+	.s-our-story::before {
+		width: 18%;
+		display: block;
+		margin: 0 auto;
+		height: 130px;
+	}
+
+	.s-our-story__container {
+		margin-top: 20px;
+		width: 100%;
+		text-align: center;
+		padding: 0 10px;
+	}
+}

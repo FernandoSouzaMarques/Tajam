@@ -62,11 +62,12 @@
 	background: transparent;
 	width: 19px;
 	height: 20px;
+	vertical-align: middle;
   border: solid 2px $color-purple-light;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .next {
@@ -77,4 +78,39 @@
 .prev {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+
+@include respond-to(mobile) {
+	.s-people-say {
+		.t-container {
+			padding: 30px 0;
+		}
+	}
+
+	.s-people-say__text {
+		font-size: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.s-people-say__carousel-dot {
+		margin: 0 2px;
+	}
+
+	.next,
+	.prev {
+		width: 15px;
+		height: 15px;
+	}
+}
+@include respond-to(tablet) {
+	.s-people-say {
+		.t-container {
+			padding: 30px 0;
+		}
+	}
+	.s-people-say__text {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

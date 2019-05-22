@@ -46,3 +46,46 @@
 		text-align: center;
 	}
 }
+
+@include respond-to(mobile) {
+	.s-contact {
+		padding: 30px 0;
+		text-align: center;
+	}
+
+	.s-contact__title {
+		text-align: center;
+	}
+
+	.s-contact__form,
+	.s-contact__clients {
+		padding: 0 10px;
+		margin: 0;
+	}
+
+	.s-contact__clients {
+		margin-top: 20px;
+	}
+}
+
+@include respond-to(tablet) {
+	.s-contact {
+		padding: 30px 0;
+		text-align: center;
+	}
+
+	.s-contact__title {
+		text-align: center;
+	}
+
+	.s-contact__form,
+	.s-contact__clients {
+		padding: 0 10px;
+		margin: 0;
+		max-width: 700px;
+	}
+
+	.s-contact__clients {
+		margin-top: 20px;
+	}
+}
