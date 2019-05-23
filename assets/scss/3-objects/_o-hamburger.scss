@@ -9,7 +9,7 @@
     background-color: $color-purple-light;
     width: 55px;
     height: 55px;
-    border-radius: 50%;
+    border-radius: 25%;
     position: fixed;
     top: 14px;
     right: 18px;
@@ -33,7 +33,7 @@
     content: '';
     display: block;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background: $color-white;
     position: fixed;
     right: 30px;

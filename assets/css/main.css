@@ -397,7 +397,7 @@ main {
     background-color: #655c80;
     width: 55px;
     height: 55px;
-    border-radius: 50%;
+    border-radius: 25%;
     position: fixed;
     top: 14px;
     right: 18px;
@@ -419,7 +419,7 @@ main {
     content: '';
     display: block;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background: #fff;
     position: fixed;
     right: 30px;
@@ -752,6 +752,10 @@ main {
   .s-header .t-container {
     padding-top: 16px;
     position: relative; }
+
+.s-header__top-bar {
+  position: fixed;
+  width: 950px; }
 
 .s-header__logo {
   float: left; }

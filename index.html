@@ -9,35 +9,27 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<header class="s-header">
+	<header class="s-header" id="home">
 		<div class="t-container">
-			<figure class="s-header__logo">
-				<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
-			</figure>
-			<div class="o-hamburger" data-hamburger>
-				<button class="o-hamburger__button"></button>
+			<div class="s-header__top-bar">
+				<figure class="s-header__logo">
+					<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
+				</figure>
+				<div class="o-hamburger" data-hamburger>
+					<button class="o-hamburger__button"></button>
+				</div>
+				<nav class="c-menu" data-menu>
+					<ul class="c-menu__list" id="my-awesome-nav">
+						<li class="c-menu__list-item"><a href="#home" class="c-menu__item c-menu__item--is-active">Home</a></li>
+						<li class="c-menu__list-item"><a href="#about" class="c-menu__item">About</a></li>
+						<li class="c-menu__list-item"><a href="#expertiese" class="c-menu__item">Expertise</a></li>
+						<li class="c-menu__list-item"><a href="#teams" class="c-menu__item">Teams</a></li>
+						<li class="c-menu__list-item"><a href="#works" class="c-menu__item">Works</a></li>
+						<li class="c-menu__list-item"><a href="#people" class="c-menu__item">People say</a></li>
+						<li class="c-menu__list-item"><a href="#contact" class="c-menu__item">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="c-menu" data-menu>
-				<ul class="c-menu__list">
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item c-menu__item--is-active">Home</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">About</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Expertise</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Teams</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Works</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">People say</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Contact</a></li>
-				</ul>
-			</nav>
-			<script>
-					let btn = document.querySelector('[data-hamburger]');
-					let menu = document.querySelector('[data-menu]');
-
-					btn.addEventListener('click', (e) => {
-						btn.classList.toggle('o-hamburger--is-active');
-						menu.classList.toggle('c-menu--is-active');
-					})
-				</script>
-
 			<h1 class="s-header__title">
 				We Are Awesome Creative Agency
 			</h1>
@@ -60,7 +52,7 @@
 	</header>
 
 	<main class="s-main">
-		<section class="s-our-story t-container">
+		<section class="s-our-story t-container" id="about">
 			<div class="s-our-story__container">
 				<h2 class="s-our-story__title">
 					Our Story
@@ -90,7 +82,7 @@
 			</div>
 		</section>
 
-		<section class="s-expertise t-container">
+		<section class="s-expertise t-container" id="expertiese">
 			<h2 class="s-expertise__title">
 				Expertise
 			</h2>
@@ -155,7 +147,7 @@
 			</div>
 		</section>
 
-		<section class="s-team">
+		<section class="s-team" id="teams">
 			<div class="t-container">
 				<h2 class="s-team__title">
 					MEET OUR AMAZING TEAM
@@ -217,7 +209,7 @@
 			</div>
 		</section>
 
-		<section class="s-works">
+		<section class="s-works" id="works">
 			<div class="t-container">
 				<h2 class="s-works__title">Our Works</h2>
 				<a href="#" class="s-works__see-all">See All Project in dribbble</a>
@@ -242,7 +234,7 @@
 			</button>
 		</section>
 
-		<section class="s-people-say">
+		<section class="s-people-say" id="people">
 			<div class="t-container">
 				<p class="s-people-say__text">
 					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
@@ -263,7 +255,7 @@
 			</div>
 		</section>
 
-		<section class="s-contact t-container">
+		<section class="s-contact t-container" id="contact">
 			<form class="s-contact__form">
 				<h2 class="s-contact__title s-contact__title--form">
 					Give us a good news
@@ -350,6 +342,7 @@
 			 <small class="c-footer-nav__copy">Copyright &copy; 2015 - Tajam Creative</small>
 		</div>
 	</footer>
+<script src="assets/js/gumshoe/dist/gumshoe.polyfills.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
