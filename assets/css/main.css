@@ -356,6 +356,10 @@ strong {
   font-family: "Playfair Display", serif;
   color: #413d4b; }
 
+main {
+  z-index: 0;
+  position: relative; }
+
 @media only screen and (max-width: 1149px) {
   html,
   body {
@@ -383,6 +387,69 @@ strong {
   color: #120a39;
   border-color: #120a39; }
 
+.o-hamburger {
+  display: none;
+  z-index: 2; }
+
+@media only screen and (max-width: 767px) {
+  .o-hamburger {
+    display: block;
+    background-color: #655c80;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+    top: 14px;
+    right: 18px;
+    z-index: 20; }
+
+  .o-hamburger__button {
+    background: #fff;
+    border: none;
+    width: 30px;
+    height: 2px;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    box-sizing: border-box;
+    outline: none; }
+
+  .o-hamburger__button::after,
+  .o-hamburger__button::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: fixed;
+    right: 30px;
+    box-sizing: border-box; }
+
+  .o-hamburger__button::before {
+    top: 30px; }
+
+  .o-hamburger__button::after {
+    top: 50px; }
+
+  .o-hamburger--is-active .o-hamburger__button {
+    top: 40px;
+    right: 30px;
+    transform: rotate(90deg);
+    background: transparent;
+    transition: 0.5s; }
+  .o-hamburger--is-active .o-hamburger__button::after,
+  .o-hamburger--is-active .o-hamburger__button::before {
+    content: '';
+    background: #120a39;
+    right: 30px; }
+  .o-hamburger--is-active .o-hamburger__button::before {
+    top: 0;
+    left: 0;
+    transform: rotate(45deg); }
+  .o-hamburger--is-active .o-hamburger__button::after {
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg); } }
 .s-header,
 .s-watch,
 .s-team,
@@ -429,6 +496,30 @@ strong {
 .c-menu__item--is-active {
   color: #00e0d0; }
 
+@media only screen and (max-width: 767px) {
+  .c-menu {
+    float: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    padding: 60px 10px;
+    background-color: #655c80;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 1s; }
+
+  .c-menu--is-active {
+    transform: translateX(0); }
+
+  .c-menu__list-item {
+    display: block;
+    text-align: right;
+    margin-bottom: 25px; }
+
+  .c-menu__item {
+    font-size: 18px; } }
 .c-carousel {
   margin: 127px 0 0;
   padding: 0;

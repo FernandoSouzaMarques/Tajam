@@ -14,7 +14,10 @@
 			<figure class="s-header__logo">
 				<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
 			</figure>
-			<nav class="c-menu">
+			<div class="o-hamburger" data-hamburger>
+				<button class="o-hamburger__button"></button>
+			</div>
+			<nav class="c-menu" data-menu>
 				<ul class="c-menu__list">
 					<li class="c-menu__list-item"><a href="#" class="c-menu__item c-menu__item--is-active">Home</a></li>
 					<li class="c-menu__list-item"><a href="#" class="c-menu__item">About</a></li>
@@ -25,6 +28,15 @@
 					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Contact</a></li>
 				</ul>
 			</nav>
+			<script>
+					let btn = document.querySelector('[data-hamburger]');
+					let menu = document.querySelector('[data-menu]');
+
+					btn.addEventListener('click', (e) => {
+						btn.classList.toggle('o-hamburger--is-active');
+						menu.classList.toggle('c-menu--is-active');
+					})
+				</script>
 
 			<h1 class="s-header__title">
 				We Are Awesome Creative Agency
@@ -70,7 +82,7 @@
 		<section class="s-watch">
 			<div class="s-watch__container">
 				<button class="s-watch__button">
-					
+
 				</button>
 				<h3 class="s-watch__title">
 					Watch Our Story
@@ -196,7 +208,7 @@
 				</div>
 
 				<p class="s-team__second-text">
-					Become part of our dream team, let’s join us ! 
+					Become part of our dream team, let’s join us !
 				</p>
 
 				<button class="o-button o-button--white">
