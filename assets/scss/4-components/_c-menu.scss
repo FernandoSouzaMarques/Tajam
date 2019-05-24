@@ -24,8 +24,11 @@
 	margin: 0 12px;
 }
 
-.c-menu__item:hover,
-.c-menu__item--is-active {
+.c-menu__item:hover {
+	color: $color-blue;
+}
+
+.c-menu__list .active .c-menu__item {
 	color: $color-blue;
 }
 

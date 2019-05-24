@@ -492,8 +492,10 @@ main {
   font-weight: 600;
   margin: 0 12px; }
 
-.c-menu__item:hover,
-.c-menu__item--is-active {
+.c-menu__item:hover {
+  color: #00e0d0; }
+
+.c-menu__list .active .c-menu__item {
   color: #00e0d0; }
 
 @media only screen and (max-width: 767px) {
