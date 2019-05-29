@@ -676,7 +676,7 @@ main {
 
 .c-gallery__image {
   flex: 1;
-  min-width: 225px;
+  min-width: 16%;
   height: 200px;
   margin: 0;
   padding: 0;
@@ -686,6 +686,12 @@ main {
 .c-gallery__image:nth-child(even) {
   background-color: #b6b6b6; }
 
+@media only screen and (min-width: 768px) and (max-width: 1149px) {
+  .c-gallery__image {
+    min-width: 26%; } }
+@media only screen and (max-width: 767px) {
+  .c-gallery__image {
+    min-width: 100%; } }
 .c-socials {
   list-style: none;
   text-align: left;

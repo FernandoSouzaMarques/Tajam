@@ -7,7 +7,7 @@
 
 .c-gallery__image {
 	flex: 1;
-	min-width: 225px;
+	min-width: 16%;
 	height: 200px;
 	margin: 0;
 	padding: 0;
@@ -17,4 +17,16 @@
 
 .c-gallery__image:nth-child(even) {
 	background-color: #b6b6b6;
+}
+
+@include respond-to(tablet) {
+	.c-gallery__image {
+		min-width: 26%;
+	}	
+}
+
+@include respond-to(mobile) {
+	.c-gallery__image {
+		min-width: 100%;
+	}	
 }

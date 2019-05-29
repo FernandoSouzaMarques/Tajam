@@ -7,6 +7,11 @@
   <title>Tajam | Landing Page</title>
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/common/symbol.png">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<style type="text/css">
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
 </head>
 <body>
 	<header class="s-header" id="home">
@@ -20,13 +25,13 @@
 							</div>
 							<nav class="c-menu" data-menu>
 								<ul class="c-menu__list" data-menu id="my-awesome-nav">
-									<li class="c-menu__list-item"><a href="#home" class="c-menu__item">Home</a></li>
-									<li class="c-menu__list-item"><a href="#about" class="c-menu__item">About</a></li>
-									<li class="c-menu__list-item"><a href="#expertiese" class="c-menu__item">Expertise</a></li>
-									<li class="c-menu__list-item"><a href="#teams" class="c-menu__item">Teams</a></li>
-									<li class="c-menu__list-item"><a href="#works" class="c-menu__item">Works</a></li>
-									<li class="c-menu__list-item"><a href="#people" class="c-menu__item">People say</a></li>
-									<li class="c-menu__list-item"><a href="#contact" class="c-menu__item">Contact</a></li>
+									<li class="c-menu__list-item"><a href="#home" class="c-menu__item" id="menu-home">Home</a></li>
+									<li class="c-menu__list-item"><a href="#about" class="c-menu__item" id="menu-about">About</a></li>
+									<li class="c-menu__list-item"><a href="#expertise" class="c-menu__item" id="menu-expertise">Expertise</a></li>
+									<li class="c-menu__list-item"><a href="#teams" class="c-menu__item" id="menu-teams">Teams</a></li>
+									<li class="c-menu__list-item"><a href="#works" class="c-menu__item" id="menu-works">Works</a></li>
+									<li class="c-menu__list-item"><a href="#people" class="c-menu__item" id="menu-people">People say</a></li>
+									<li class="c-menu__list-item"><a href="#contact" class="c-menu__item" id="menu-contact">Contact</a></li>
 								</ul>
 							</nav>
 				</div>
@@ -53,7 +58,7 @@
 		</div>
 	</header>
 
-	<main class="s-main">
+	<main class="s-main" style="scroll-behavior: smooth;">
 		<section class="s-our-story t-container" id="about">
 			<div class="s-our-story__container">
 				<h2 class="s-our-story__title">
@@ -84,7 +89,7 @@
 			</div>
 		</section>
 
-		<section class="s-expertise t-container" id="expertiese">
+		<section class="s-expertise t-container" id="expertise">
 			<h2 class="s-expertise__title">
 				Expertise
 			</h2>
