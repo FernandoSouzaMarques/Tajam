@@ -1,10 +1,10 @@
 .c-team {
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
 }
 
 .c-team__people {
-	flex: 1;
+	display: inline-block;
+	margin: 0 5px;
 }
 
 .c-team__photo {

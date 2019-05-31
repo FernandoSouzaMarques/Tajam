@@ -36,7 +36,7 @@
 			<h1 class="s-header__title">
 				We Are Awesome Creative Agency
 			</h1>
-			<div class="main-carousel" data-flickity='{ "prevNextButtons": false}'>
+			<div class="main-carousel__header" data-flickity='{ "prevNextButtons": false}'>
 				<p class="s-header__text carousel-cell">
 					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 				</p>
@@ -163,7 +163,7 @@
 					Lorem ipsum dolor sit amet proin gravida nibh vel velit
 				</p>
 
-				<div class="c-team main-carousel" data-flickity='{ "prevNextButtons": false, "pageDots": false, "watchCSS": true}'>
+				<div class="c-team main-carousel__team" data-flickity='{ "pageDots": false, "prevNextButtons": false, "watchCSS": true }'>
 					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
@@ -262,17 +262,19 @@
 		</section>
 
 		<section class="s-contact t-container" id="contact">
-			<form class="s-contact__form">
+				<form class="s-contact__form" action="https://formspree.io/fernandinhosouzamarques@gmail.com" method="POST">
 				<h2 class="s-contact__title s-contact__title--form">
 					Give us a good news
 				</h2>
 
 				<input type="text" name="Name" placeholder="Name" class="s-contact__input">
-				<input type="text" name="Email" placeholder="Email" class="s-contact__input">
-				<input type="text" name="Subject" placeholder="Subject" class="s-contact__input">
+				<input type="text" name="_replyto" placeholder="Email" class="s-contact__input">
+				<input type="text" name="_subject" placeholder="Subject" class="s-contact__input">
+				<!-- <input type="hidden" name="_next" value="https://sounoob/com.br/contato/obrigado" />  - Página de agradecimento --> 
+				<input type="text" name="_gotcha" style="display:none" />
 				<textarea placeholder="Your Message" class="s-contact__textarea"></textarea>
 
-				<button class="o-button o-button--purple">
+				<button type="submit" class="o-button o-button--purple">
 					Submit
 				</button>
 			</form>
@@ -322,9 +324,9 @@
 
 			<div class="s-footer__socials">
 				<h5 class="s-footer__title">STAY IN TOUCH</h5>
-				<form class="s-footer__email">
+				<form class="s-footer__email" action="https://formspree.io/fernandinhosouzamarques@gmail.com" method="POST">
 					<input type="text" name="newsletter" placeholder="Subscribe our newsletter" class="s-footer__email-input">
-					<button class="s-footer__email-submit"></button>
+					<button type="submit" class="s-footer__email-submit"></button>
 				</form>
 
 				<ul class="c-socials">
