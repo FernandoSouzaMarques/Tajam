@@ -6,13 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tajam | Landing Page</title>
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/common/symbol.png">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<style type="text/css">
-		html {
-			scroll-behavior: smooth;
-		}
-	</style>
-</head>
+	</head>
 <body>
 	<header class="s-header" id="home">
 			<div class="s-header__top-bar">
@@ -40,21 +36,24 @@
 			<h1 class="s-header__title">
 				We Are Awesome Creative Agency
 			</h1>
-
-			<p class="s-header__text">
-				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-			</p>
+			<div class="main-carousel" data-flickity='{ "prevNextButtons": false}'>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+			</div>
 
 			<button class="o-button o-button--white">
 				Learn More
 			</button>
-
-			<ul class="c-carousel">
-				<li class="c-carousel__dot is-selected"></li>
-				<li class="c-carousel__dot"></li>
-				<li class="c-carousel__dot"></li>
-				<li class="c-carousel__dot"></li>
-			</ul>
 		</div>
 	</header>
 
@@ -164,8 +163,8 @@
 					Lorem ipsum dolor sit amet proin gravida nibh vel velit
 				</p>
 
-				<div class="c-team">
-					<div class="c-team__people">
+				<div class="c-team main-carousel" data-flickity='{ "prevNextButtons": false, "pageDots": false, "watchCSS": true}'>
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -175,7 +174,7 @@
 						</figure>
 					</div>
 
-					<div class="c-team__people">
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -185,7 +184,7 @@
 						</figure>
 					</div>
 
-					<div class="c-team__people">
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -195,7 +194,7 @@
 						</figure>
 					</div>
 
-					<div class="c-team__people">
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -349,6 +348,7 @@
 			 <small class="c-footer-nav__copy">Copyright &copy; 2015 - Tajam Creative</small>
 		</div>
 	</footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="assets/js/gumshoe/dist/gumshoe.polyfills.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

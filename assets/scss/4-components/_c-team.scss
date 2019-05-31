@@ -28,7 +28,7 @@
 .c-team__office {
 	font-size: 13px;
 	color: $color-purple-light;
-	font-family: $font-family-main;	
+	font-family: $font-family-main;
 	font-weight: $font-weight-light;
 }
 
@@ -36,16 +36,4 @@
 	font-size: 14px;
 	color: $color-white;
 	margin-bottom: 26px;
-}
-
-@include respond-to(mobile) {
-	.c-team__people:not(:first-child) {
-		display: none;
-	}
-}
-
-@include respond-to(tablet) {
-	.c-team__people:not(:first-child) {
-		display: none;
-	}
 }

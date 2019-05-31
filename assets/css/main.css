@@ -335,7 +335,8 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #2f2d35; }
+  color: #2f2d35;
+  scroll-behavior: smooth; }
 
 * {
   box-sizing: border-box;
@@ -368,6 +369,22 @@ main {
   html,
   body {
     font-size: 2.1vw; } }
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; }
+
+body::-webkit-scrollbar-track {
+  background-color: #655c80;
+  border-radius: 5px; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #120a39;
+  border-radius: 5px; }
+
+body::-webkit-scrollbar-corner {
+  background-color: #655c80;
+  visibility: visible; }
+
 .o-button {
   color: #00e0d0;
   font-family: "Hammersmith One", sans-serif;
@@ -522,30 +539,35 @@ main {
 
   .c-menu__item {
     font-size: 18px; } }
-.c-carousel {
-  margin: 127px 0 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  width: 100%; }
+.carousel-cell {
+  width: 100% !important;
+  margin-right: 125px !important; }
 
-.c-carousel__dot {
-  display: inline-block;
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: -160px !important; }
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1;
   background: transparent;
-  border: solid 1px #fff;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  cursor: pointer; }
-  .c-carousel__dot:hover {
-    border-color: #00e0d0;
-    background-color: #00e0d0; }
+  border: 2px solid #00e0d0; }
 
-.is-selected {
-  border-color: #00e0d0;
-  background-color: #00e0d0; }
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #00e0d0; }
 
+/* flickity on by default */
+.main-carousel:after {
+  content: 'flickity';
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  /* disable Flickity for large devices */
+  .main-carousel:after {
+    content: ''; } }
 .c-grid {
   display: flex;
   flex-wrap: wrap; }
@@ -662,12 +684,6 @@ main {
   color: #fff;
   margin-bottom: 26px; }
 
-@media only screen and (max-width: 767px) {
-  .c-team__people:not(:first-child) {
-    display: none; } }
-@media only screen and (min-width: 768px) and (max-width: 1149px) {
-  .c-team__people:not(:first-child) {
-    display: none; } }
 .c-gallery {
   display: flex;
   flex-wrap: wrap;
