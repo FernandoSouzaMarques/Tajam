@@ -1,0 +1,42 @@
+.body__thanks {
+	width: 100%;
+	background-image: url('../images/header/h-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background-color: $gd-purple;
+	}
+}
+
+.title__thanks {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	text-align: center;	
+	margin: 0;
+	font-family: $font-family-title;
+	color: $color-white !important;
+}
+
+.back__thanks {
+	color: $color-white;
+	font-size: 20px;
+	font-family: $font-family-second;
+	padding: 20px;
+	float: right;
+
+	&:hover {
+		color: $color-blue;
+	}
+}
