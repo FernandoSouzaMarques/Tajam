@@ -8,3 +8,8 @@
 	display: inline-block;
 	margin: 0 4px;
 }
+
+.c-socials__image:hover {
+	background-color: $color-purple-light;
+	border-radius: 50%;
+}

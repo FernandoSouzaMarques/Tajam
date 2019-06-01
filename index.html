@@ -6,49 +6,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tajam | Landing Page</title>
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/common/symbol.png">
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	</head>
 <body>
-	<header class="s-header">
+	<header class="s-header" id="home">
+			<div class="s-header__top-bar">
+				<div class="t-container">
+						<figure class="s-header__logo">
+								<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
+							</figure>
+							<div class="o-hamburger" data-hamburger>
+								<button class="o-hamburger__button"></button>
+							</div>
+							<nav class="c-menu" data-menu>
+								<ul class="c-menu__list" data-menu id="my-awesome-nav">
+									<li class="c-menu__list-item"><a href="#home" class="c-menu__item" id="menu-home">Home</a></li>
+									<li class="c-menu__list-item"><a href="#about" class="c-menu__item" id="menu-about">About</a></li>
+									<li class="c-menu__list-item"><a href="#expertise" class="c-menu__item" id="menu-expertise">Expertise</a></li>
+									<li class="c-menu__list-item"><a href="#teams" class="c-menu__item" id="menu-teams">Teams</a></li>
+									<li class="c-menu__list-item"><a href="#works" class="c-menu__item" id="menu-works">Works</a></li>
+									<li class="c-menu__list-item"><a href="#people" class="c-menu__item" id="menu-people">People say</a></li>
+									<li class="c-menu__list-item"><a href="#contact" class="c-menu__item" id="menu-contact">Contact</a></li>
+								</ul>
+							</nav>
+				</div>
+			</div>
 		<div class="t-container">
-			<figure class="s-header__logo">
-				<img src="assets/images/common/logo.png" alt="Tajam" title="Tajam">
-			</figure>
-			<nav class="c-menu">
-				<ul class="c-menu__list">
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item c-menu__item--is-active">Home</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">About</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Expertise</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Teams</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Works</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">People say</a></li>
-					<li class="c-menu__list-item"><a href="#" class="c-menu__item">Contact</a></li>
-				</ul>
-			</nav>
-
 			<h1 class="s-header__title">
 				We Are Awesome Creative Agency
 			</h1>
-
-			<p class="s-header__text">
-				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-			</p>
+			<div class="main-carousel__header" data-flickity='{ "prevNextButtons": false}'>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+				<p class="s-header__text carousel-cell">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				</p>
+			</div>
 
 			<button class="o-button o-button--white">
 				Learn More
 			</button>
-
-			<ul class="c-carousel">
-				<li class="c-carousel__dot is-selected"></li>
-				<li class="c-carousel__dot"></li>
-				<li class="c-carousel__dot"></li>
-				<li class="c-carousel__dot"></li>
-			</ul>
 		</div>
 	</header>
 
-	<main class="s-main">
-		<section class="s-our-story t-container">
+	<main class="s-main" style="scroll-behavior: smooth;">
+		<section class="s-our-story t-container" id="about">
 			<div class="s-our-story__container">
 				<h2 class="s-our-story__title">
 					Our Story
@@ -70,7 +80,7 @@
 		<section class="s-watch">
 			<div class="s-watch__container">
 				<button class="s-watch__button">
-					
+
 				</button>
 				<h3 class="s-watch__title">
 					Watch Our Story
@@ -78,7 +88,7 @@
 			</div>
 		</section>
 
-		<section class="s-expertise t-container">
+		<section class="s-expertise t-container" id="expertise">
 			<h2 class="s-expertise__title">
 				Expertise
 			</h2>
@@ -143,7 +153,7 @@
 			</div>
 		</section>
 
-		<section class="s-team">
+		<section class="s-team" id="teams">
 			<div class="t-container">
 				<h2 class="s-team__title">
 					MEET OUR AMAZING TEAM
@@ -153,8 +163,8 @@
 					Lorem ipsum dolor sit amet proin gravida nibh vel velit
 				</p>
 
-				<div class="c-team">
-					<div class="c-team__people">
+				<div class="c-team main-carousel__team" data-flickity='{ "pageDots": false, "prevNextButtons": false, "watchCSS": true }'>
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -164,7 +174,7 @@
 						</figure>
 					</div>
 
-					<div class="c-team__people">
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -174,7 +184,7 @@
 						</figure>
 					</div>
 
-					<div class="c-team__people">
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -184,7 +194,7 @@
 						</figure>
 					</div>
 
-					<div class="c-team__people">
+					<div class="c-team__people carousel-cell__people">
 						<figure>
 							<img src="assets/images/team/t-people.png" class="c-team__photo">
 							<figcaption class="c-team__information">
@@ -196,7 +206,7 @@
 				</div>
 
 				<p class="s-team__second-text">
-					Become part of our dream team, let’s join us ! 
+					Become part of our dream team, let’s join us !
 				</p>
 
 				<button class="o-button o-button--white">
@@ -205,7 +215,7 @@
 			</div>
 		</section>
 
-		<section class="s-works">
+		<section class="s-works" id="works">
 			<div class="t-container">
 				<h2 class="s-works__title">Our Works</h2>
 				<a href="#" class="s-works__see-all">See All Project in dribbble</a>
@@ -230,7 +240,7 @@
 			</button>
 		</section>
 
-		<section class="s-people-say">
+		<section class="s-people-say" id="people">
 			<div class="t-container">
 				<p class="s-people-say__text">
 					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
@@ -251,18 +261,20 @@
 			</div>
 		</section>
 
-		<section class="s-contact t-container">
-			<form class="s-contact__form">
+		<section class="s-contact t-container" id="contact">
+				<form class="s-contact__form" action="https://formspree.io/fernandinhosouzamarques@gmail.com" method="POST">
 				<h2 class="s-contact__title s-contact__title--form">
 					Give us a good news
 				</h2>
 
 				<input type="text" name="Name" placeholder="Name" class="s-contact__input">
-				<input type="text" name="Email" placeholder="Email" class="s-contact__input">
-				<input type="text" name="Subject" placeholder="Subject" class="s-contact__input">
+				<input type="text" name="_replyto" placeholder="Email" class="s-contact__input">
+				<input type="text" name="_subject" placeholder="Subject" class="s-contact__input">
+				<!-- <input type="hidden" name="_next" value="https://sounoob/com.br/contato/obrigado" />  - Página de agradecimento --> 
+				<input type="text" name="_gotcha" style="display:none" />
 				<textarea placeholder="Your Message" class="s-contact__textarea"></textarea>
 
-				<button class="o-button o-button--purple">
+				<button type="submit" class="o-button o-button--purple">
 					Submit
 				</button>
 			</form>
@@ -312,9 +324,9 @@
 
 			<div class="s-footer__socials">
 				<h5 class="s-footer__title">STAY IN TOUCH</h5>
-				<form class="s-footer__email">
+				<form class="s-footer__email" action="https://formspree.io/fernandinhosouzamarques@gmail.com" method="POST">
 					<input type="text" name="newsletter" placeholder="Subscribe our newsletter" class="s-footer__email-input">
-					<button class="s-footer__email-submit"></button>
+					<button type="submit" class="s-footer__email-submit"></button>
 				</form>
 
 				<ul class="c-socials">
@@ -338,6 +350,8 @@
 			 <small class="c-footer-nav__copy">Copyright &copy; 2015 - Tajam Creative</small>
 		</div>
 	</footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="assets/js/gumshoe/dist/gumshoe.polyfills.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

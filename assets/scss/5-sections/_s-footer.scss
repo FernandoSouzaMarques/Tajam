@@ -1,5 +1,5 @@
 .s-footer {
-	height: 400px;
+	min-height: 400px;
 	background-image: url('../images/footer/f-bg.png');
 	color: $color-white;
 	font-weight: $font-weight-light;
@@ -112,4 +112,68 @@ background-size: content;
 	background-image: url('../images/footer/f-btn-airplane.png');
 	background-size: content;
 	background-repeat: no-repeat;
+}
+
+@include respond-to(tablet) {
+	.s-footer {
+		height: auto;
+
+		.t-container {
+	    padding: 30px 40px;
+	    text-align: center;
+		}
+	}
+
+	.s-footer__logo {
+		text-align: center;
+	}
+
+	.s-footer__informations,
+	.s-footer__location,
+	.s-footer__socials {
+		max-width: 665px;
+		width: 100%;
+		text-align: left;
+		margin-right: 0;
+	}
+
+	.s-footer__socials {
+		margin-bottom: 30px;
+	}
+
+	.s-footer__title {
+		margin: 20px 0 10px;
+	}
+}
+
+@include respond-to(mobile) {
+	.s-footer {
+		height: auto;
+
+		.t-container {
+	    padding: 30px;
+	    text-align: center;
+		}
+	}
+
+	.s-footer__logo {
+		text-align: center;
+	}
+
+	.s-footer__informations,
+	.s-footer__location,
+	.s-footer__socials {
+		max-width: 425px;
+		width: 100%;
+		text-align: left;
+		margin-right: 0;
+	}
+
+	.s-footer__socials {
+		margin-bottom: 60px;
+	}
+
+	.s-footer__title {
+		margin: 20px 0 10px;
+	}
 }

@@ -1,28 +1,37 @@
-.c-carousel {
-	margin: 127px 0 0;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-	width: 100%;
+.carousel-cell {
+	width: 100% !important;
+	margin-right: 125px !important;
 }
 
-.c-carousel__dot {
-	display: inline-block;
-	background: transparent;
-	border: solid 1px $color-white;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	box-sizing: border-box;
-	cursor: pointer;
-
-	&:hover{
-		border-color: $color-blue;
-		background-color: $color-blue;
-	}
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: -160px !important;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid $color-blue;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: $color-blue;
 }
 
-.is-selected {
-	border-color: $color-blue;
-	background-color: $color-blue;
+
+// teams 
+
+/* flickity on by default */
+.main-carousel__team::after {
+  content: 'flickity';
+  display: none;
+}
+
+@media screen and ( min-width: 769px ) {
+  /* disable Flickity for large devices */
+  .main-carousel__team::after {
+    content: '';
+  }
 }

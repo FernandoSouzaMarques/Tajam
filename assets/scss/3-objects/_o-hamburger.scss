@@ -1,0 +1,79 @@
+.o-hamburger {
+  display: none;
+  z-index: 2;
+}
+
+@include respond-to(mobile) {
+  .o-hamburger {
+    display: block;
+    background-color: $color-purple-light;
+    width: 55px;
+    height: 55px;
+    border-radius: 25%;
+    position: fixed;
+    top: 14px;
+    right: 18px;
+    z-index: 20;
+  }
+
+  .o-hamburger__button {
+    background: $color-white;
+    border: none;
+    width: 30px;
+    height: 2px;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  .o-hamburger__button::after,
+  .o-hamburger__button::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: $color-white;
+    position: fixed;
+    right: 30px;
+    box-sizing: border-box;
+  }
+
+  .o-hamburger__button::before {
+    top: 30px;
+  }
+
+  .o-hamburger__button::after {
+    top: 50px;
+  }
+
+  .o-hamburger--is-active {
+    .o-hamburger__button {
+      top: 40px;
+      right: 30px;
+      transform: rotate(90deg);
+      background: transparent;
+      transition: 0.5s;
+    }
+
+    .o-hamburger__button::after,
+    .o-hamburger__button::before {
+      content: '';
+      background: $color-purple;
+      right: 30px;
+    }
+
+    .o-hamburger__button::before {
+      top: 0;
+      left: 0;
+      transform: rotate(45deg);
+    }
+
+    .o-hamburger__button::after {
+      top: 0;
+      left: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
