@@ -724,7 +724,7 @@ body::-webkit-scrollbar-corner {
 
 .c-gallery__holder-image {
   display: inline-block;
-  width: 250px;
+  width: 245px;
   height: 150px;
   overflow: hidden;
   border: solid 2px #fff; }
