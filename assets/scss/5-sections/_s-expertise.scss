@@ -1,0 +1,33 @@
+.s-expertise {
+	padding: 70px 0;
+	text-align: center;
+}
+
+.s-expertise__title {
+	font-size: 22px;
+}
+
+.s-expertise__text {
+	font-size: 14px;
+	margin-top: 18px;
+	margin-bottom: 48px;
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 50px;
+		height: 2px;
+		top: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $color-gray-light;
+	}
+}
+
+@include respond-to(mobile) {
+	.s-expertise {
+		padding: 30px 0;
+	}
+}

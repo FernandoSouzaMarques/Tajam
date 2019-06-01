@@ -1,0 +1,68 @@
+.s-watch {
+	height: 550px;
+	background-image: url('../images/watch/w-bg.png');
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+#myVideo {
+	opacity: 0;
+	position: absolute;
+	top: -15%;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 948px;
+	min-height: 960px;
+	z-index: 1;
+	transition: 2s;
+}
+
+.openVideo {
+	opacity: 1 !important;
+}
+
+.s-watch__container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+}
+
+.background-story {
+	background: rgba($color-purple, 0.5);
+	z-index: 2;
+	transition: 1s;
+}
+
+.s-watch__container-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.s-watch__button {
+	border: none;
+	width: 100px;
+	height: 100px;
+	background: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+.w-play {
+	background-image: url('../images/watch/w-play.png');
+}
+
+.w-pause {
+	background-image: url('../images/watch/w-pause.png');
+}
+
+.s-watch__title {
+	font-size: 16px;
+	color: $color-white;
+	font-family: $font-family-main;
+	margin-top: 34px;
+}

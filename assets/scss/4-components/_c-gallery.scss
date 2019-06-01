@@ -1,0 +1,31 @@
+.c-gallery {
+	margin-top: 88px;
+	margin-bottom: 110px;
+}
+
+.c-gallery__holder-image {
+	display: inline-block;
+	width: 250px;
+	height: 150px;
+	overflow: hidden;
+	border: solid 2px $color-white;
+}
+
+.c-gallery__image {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #a1a1a1;
+	border: none;
+}
+
+.c-gallery__image:nth-child(even) {
+	background-color: #b6b6b6;
+}
+
+@include respond-to(mobile-tablet) {
+	.c-gallery__holder-image {
+		height: 200px;
+	}
+}

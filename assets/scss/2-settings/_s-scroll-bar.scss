@@ -1,0 +1,14 @@
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+body::-webkit-scrollbar-track {
+  background-color: $color-purple-light;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $color-purple;
+}
+body::-webkit-scrollbar-corner {
+  background-color: #655c80;
+  visibility: visible;
+}

@@ -1,0 +1,62 @@
+.flickity-viewport {
+  min-height: 200px !important;
+}
+
+.carousel-cell {
+	width: 100% !important;
+	margin-right: 125px !important;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: -95px !important;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1;
+  background: transparent;
+  border: 1px solid $color-blue;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: $color-blue;
+}
+
+
+// teams 
+
+/* flickity on by default */
+.main-carousel__team::after {
+  content: 'flickity';
+  display: none;
+}
+
+@media screen and ( min-width: 769px ) {
+  /* disable Flickity for large devices */
+  .main-carousel__team::after {
+    content: '';
+  }
+}
+
+
+
+// gallery 
+
+/* flickity on by default */
+.main-carousel__gallery::after {
+  content: 'flickity';
+  display: none;
+}
+
+@media screen and ( min-width: 769px ) {
+  /* disable Flickity for large devices */
+  .main-carousel__gallery::after {
+    content: '';
+  }
+}
+
+.main-carousel__gallery.is-fullscreen .carousel-cell__gallery {
+  height: 100% !important;
+}

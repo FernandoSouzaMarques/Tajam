@@ -1,0 +1,69 @@
+.c-team {
+	display: block;
+}
+
+.c-team__people {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.c-team__holder-photo {
+	overflow: hidden;
+	width: 220px;
+	height: 229px;
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 220px;
+		height: 229px;
+		z-index: 2;
+		transition: 1s;
+	}
+
+	&:hover {
+		&::after {
+			background: $gd-purple;
+		}
+
+		.c-team__photo {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.c-team__photo {
+	vertical-align: bottom;
+	transition: transform 1s;
+}
+
+.c-team__information {
+	margin: 0 auto 70px;
+	width: 220px;
+	padding: 22px 0 24px;
+	border: solid 1px $color-purple-light;
+	box-sizing: border-box;
+}
+
+.c-team__name {
+	font-size: 14px;
+	color: $color-white;
+	font-family: $font-family-main;
+}
+
+.c-team__office {
+	font-size: 13px;
+	color: $color-purple-light;
+	font-family: $font-family-main;
+	font-weight: $font-weight-light;
+}
+
+.s-team__second-text {
+	font-size: 14px;
+	color: $color-white;
+	margin-bottom: 26px;
+}

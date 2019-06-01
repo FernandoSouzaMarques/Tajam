@@ -1,0 +1,116 @@
+.s-people-say {
+	height: 500px;
+	background-image: url('../images/people-say/p-bg.png');
+	text-align: center;
+
+	.t-container {
+		padding: 70px 0;
+	}
+}
+
+.s-people-say__text {
+	margin: 0 auto 55px;
+	font-family: $font-family-title;
+	color: $color-white;
+	padding-top: 70px;
+	position: relative;
+	max-width: 770px;
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 32px;
+		height: 26px;
+		background-image: url('../images/people-say/p-marks.png');
+		background-repeat: no-repeat;
+		background-size: content;
+	}
+}
+
+.s-people-say__name {
+	color: $color-white;
+	font-size: 14px;
+	font-family: $font-family-main;
+}
+
+.s-people-say__office {
+	color: $color-purple-light;
+	font-size: 13px;
+	font-family: $font-family-main;
+	margin: 12px 0 45px;
+}
+
+.s-people-say__carousel {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.s-people-say__carousel-dot {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 7px;
+	cursor: pointer;
+}
+
+.next,
+.prev {
+	background: transparent;
+	width: 19px;
+	height: 20px;
+	vertical-align: middle;
+  border: solid 2px $color-purple-light;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.next {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.prev {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+@include respond-to(mobile) {
+	.s-people-say {
+		.t-container {
+			padding: 30px 0;
+		}
+	}
+
+	.s-people-say__text {
+		font-size: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.s-people-say__carousel-dot {
+		margin: 0 2px;
+	}
+
+	.next,
+	.prev {
+		width: 15px;
+		height: 15px;
+	}
+}
+@include respond-to(tablet) {
+	.s-people-say {
+		.t-container {
+			padding: 30px 0;
+		}
+	}
+	.s-people-say__text {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
