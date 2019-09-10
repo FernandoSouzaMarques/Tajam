@@ -2,14 +2,14 @@
 
 // Menu.create();
 
-console.log('
+console.log(`
  _____      _                 
 |_   _|_ _ (_) __ _ _ __ ___  
   | |/ _` || |/ _` | '_ ` _ \ 
   | | (_| || | (_| | | | | | |
   |_|\__,_|/ |\__,_|_| |_| |_|
          |__/ 
-')
+`);
 
 
 let btn = document.querySelector('[data-hamburger]');
